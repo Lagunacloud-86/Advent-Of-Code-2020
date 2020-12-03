@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayOne", "DayOne\DayOne.csproj", "{78F86E4E-3B44-44EA-B713-2F99428BC689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourceReader", "ResourceReader\ResourceReader.csproj", "{3E6A7A06-2DDC-442F-A54A-1ECE9594701B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78F86E4E-3B44-44EA-B713-2F99428BC689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F86E4E-3B44-44EA-B713-2F99428BC689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F86E4E-3B44-44EA-B713-2F99428BC689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F86E4E-3B44-44EA-B713-2F99428BC689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6A7A06-2DDC-442F-A54A-1ECE9594701B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6A7A06-2DDC-442F-A54A-1ECE9594701B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6A7A06-2DDC-442F-A54A-1ECE9594701B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6A7A06-2DDC-442F-A54A-1ECE9594701B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6369E45A-A40B-42E6-A22A-88AF78666A2F}
+	EndGlobalSection
+EndGlobal
