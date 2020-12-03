@@ -21,40 +21,8 @@ namespace DayOne
 
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-
-
-            //List<ItemPointers> itemPointers = new List<ItemPointers>();
 
             String[] items = GetInputData();
-            //for (Int32 i = 0; i < items.Length - 1; ++i)
-            //{
-            //    if (!Int32.TryParse(items[i], out Int32 value1))
-            //        continue;
-
-            //    for(Int32  j = i + 1; j < items.Length; ++j)
-            //    {
-            //        if (!Int32.TryParse(items[j], out Int32 value2))
-            //            continue;
-
-            //        if (value1 + value2 == 2020)
-            //            itemPointers.Add(new ItemPointers
-            //            {
-            //                Index1 = i,
-            //                Value1 = value1,
-            //                Index2 = j,
-            //                Value2 = value2
-            //            });
-
-
-            //    }
-            //}
-
-            //Console.WriteLine($"Pointer counts: {itemPointers.Count}");
-            //foreach (ItemPointers pointer in itemPointers)
-            //{
-            //    Console.WriteLine($"Pointer Value1: {pointer.Value1}, Pointer Value2: {pointer.Value2}; Multiplied: {pointer.Value1 * pointer.Value2}");
-            //}
             Console.WriteLine($"Part One Answer: {CalculatePartOne(items)}");
             Console.WriteLine($"Part Two Answer: {CalculatePartTwo(items)}");
 
