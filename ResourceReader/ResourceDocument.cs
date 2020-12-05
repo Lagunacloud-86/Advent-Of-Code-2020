@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
+using System;
 using System.IO;
 using System.Reflection;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+
+using ResourceReader.Nodes.Structures;
+using ResourceReader.Interfaces;
 
 namespace ResourceReader
 {
@@ -14,7 +16,7 @@ namespace ResourceReader
         private readonly Char[] _document;
 
 
-        private ResourceDocument(in Char[] document)
+        private ResourceDocument(in Char[] document, in INodeIterator iterator)
         {
             _document = new Char[document.Length];
             Array.Copy(document, _document, document.Length);
@@ -31,6 +33,7 @@ namespace ResourceReader
         public static async ValueTask<ResourceDocument> DocumentFromEmbeddedResource(
             Assembly assembly, 
             String embeddedResource,
+            INodeIterator iterator,
             CancellationToken cancellationToken = default)
         {
             Char[] document = null;
@@ -52,7 +55,7 @@ namespace ResourceReader
                 }
             }
 
-            return new ResourceDocument(document);
+            return new ResourceDocument(in document, in iterator);
         }
     }
 }

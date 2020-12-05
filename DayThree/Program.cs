@@ -13,7 +13,7 @@ namespace DayThree
         {
             
             var document = await ResourceDocument
-                .DocumentFromEmbeddedResource(Assembly.GetExecutingAssembly(), "DayThree.DayThreeInput.txt");
+                .DocumentFromEmbeddedResource(Assembly.GetExecutingAssembly(), "DayThree.DayThreeInput.txt", null);
 
             PartOne(in document);
             PartTwo(in document);
