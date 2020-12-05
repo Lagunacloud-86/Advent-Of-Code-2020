@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DayFiveInput.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DayFiveInput.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ResourceReader\ResourceReader.csproj" />
+  </ItemGroup>
+
+</Project>

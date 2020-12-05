@@ -14,14 +14,24 @@ namespace ResourceReader
     {
         //private const Int32 ReadSize = 4096;
         private readonly Char[] _document;
+        private readonly INodeIterator _iterator = null;
 
+
+        public INodeIterator NodeIterator => _iterator;
 
         private ResourceDocument(in Char[] document, in INodeIterator iterator)
         {
             _document = new Char[document.Length];
+            _iterator = iterator;
             Array.Copy(document, _document, document.Length);
 
         }
+
+        //public Boolean NextNode(out Int32 sliceIndex, out Int32 sliceLength)
+        //{
+
+        //    return _iterator.NextNode(in )
+        //}
 
 
         public ref readonly Char[] ToCharArray()
